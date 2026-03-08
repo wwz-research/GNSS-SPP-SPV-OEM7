@@ -3,15 +3,7 @@
 
 项目完整实验设计与结果可参考：[项目实验报告（PDF）](项目实验报告.pdf)
 
-## 项目简介
-
-`SPP_SPV` 是一个基于 C++ 的 GNSS 单点定位 / 测速（Single Point Positioning / Single Point Velocity, SPP/SPV）示例程序。  
-项目支持 **GPS + BDS** 广播星历，输入为 **NovAtel OEM7 二进制数据流**（文件或 TCP 网络流），完成从原始观测数据到三维位置和速度的整条处理链。
-
-- **输入**：NovAtel OEM7 原始二进制流（包含 RANGEB、GPSEPHEM、BDSEPHEM、PSRPOS 等消息）。  
-- **输出**：接收机在 ECEF/BLH 坐标系下的位置、速度，以及与 OEM 自身解算结果的 ENU 误差等文本结果。
-
-## 功能特性
+## 功能概述
 
 - **单点定位 / 测速 (SPP/SPV)**  
   - 基于广播星历的单点定位（SPP），支持 GPS + BDS 双系统联合解算。  
@@ -35,7 +27,7 @@
   - ECEF ↔ BLH、ECEF ↔ ENU/NEU 坐标转换。  
   - 计算与 OEM 自身位置解之间的 ENU 误差。
 
-## 目录结构（简要）
+## 项目结构
 
 ```text
 SPP_SPV/
