@@ -1,0 +1,41 @@
+# 编译产物
+build/
+cmake-build-*/
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+*.pdb
+*.ilk
+
+# 中间文件
+*.tmp
+*.log
+*.bak
+*.pch
+
+# 运行输出 / 数据结果
+output_file.txt
+output_net.txt
+
+# IDE / 工程配置
+.vscode/
+.idea/
+*.vcxproj
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userprefs
+
+# 其他常见忽略项
+*.DS_Store
+Thumbs.db
+
